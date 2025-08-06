@@ -1,0 +1,45 @@
+{
+  "name": "@enymo/react-resource-hook-util",
+  "version": "0.0.0",
+  "description": "Utility library for react resource hook backends",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": {
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.ts"
+      }
+    }
+  },
+  "tsup": {
+    "entry": [
+      "src/js/index.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "dts": true
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enymo/react-resource-hook-util.git"
+  },
+  "author": "enymo GmbH",
+  "license": "MIT",
+  "devDependencies": {
+    "postcss": "^8.5.6",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}
